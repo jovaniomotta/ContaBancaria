@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\MiniProjeto\ContaBancaria\bin\Debug\net10.0\ContaBancaria.exe
+C:\Users\Admin\Desktop\MiniProjeto\ContaBancaria\bin\Debug\net10.0\ContaBancaria.deps.json
+C:\Users\Admin\Desktop\MiniProjeto\ContaBancaria\bin\Debug\net10.0\ContaBancaria.runtimeconfig.json
+C:\Users\Admin\Desktop\MiniProjeto\ContaBancaria\bin\Debug\net10.0\ContaBancaria.dll
+C:\Users\Admin\Desktop\MiniProjeto\ContaBancaria\bin\Debug\net10.0\ContaBancaria.pdb
+C:\Users\Admin\Desktop\MiniProjeto\ContaBancaria\obj\Debug\net10.0\ContaBancaria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\MiniProjeto\ContaBancaria\obj\Debug\net10.0\ContaBancaria.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\MiniProjeto\ContaBancaria\obj\Debug\net10.0\ContaBancaria.AssemblyInfo.cs
+C:\Users\Admin\Desktop\MiniProjeto\ContaBancaria\obj\Debug\net10.0\ContaBancaria.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\MiniProjeto\ContaBancaria\obj\Debug\net10.0\ContaBancaria.dll
+C:\Users\Admin\Desktop\MiniProjeto\ContaBancaria\obj\Debug\net10.0\refint\ContaBancaria.dll
+C:\Users\Admin\Desktop\MiniProjeto\ContaBancaria\obj\Debug\net10.0\ContaBancaria.pdb
+C:\Users\Admin\Desktop\MiniProjeto\ContaBancaria\obj\Debug\net10.0\ContaBancaria.genruntimeconfig.cache
+C:\Users\Admin\Desktop\MiniProjeto\ContaBancaria\obj\Debug\net10.0\ref\ContaBancaria.dll
