@@ -11,11 +11,19 @@ namespace ContaBancaria
             Conta bia = new ContaPoupanca("Bia", 2000);
             Conta caio = new ContaCorrente("Caio");
 
+            try
+            {
+
             ana.Depositar(200);
             bia.Depositar(500);
             ana.Sacar(1500);
             caio.Sacar(400);
             caio.Sacar(200);
+            }
+            catch (SaldoInsuficienteException ex)
+            {
+                Console.WriteLine($"Ocorreu um erro: {ex.Message}");
+            }
 
             List<Conta> contas = new List<Conta> { ana, bia, caio };
             foreach (Conta c in contas)
@@ -23,6 +31,7 @@ namespace ContaBancaria
                 c.FimDoMes();
                 c.ExibirExtrato();
             }
+       
         }
     }
 }

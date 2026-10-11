@@ -27,31 +27,25 @@ public abstract class Conta
         public virtual void Depositar(decimal valor)
         {
             if (valor <= 0)
-            {
-                Console.WriteLine("O valor do depósito deve ser positivo.");
-                return;
-            }
+            throw new ArgumentException("O valor do depósito deve ser positivo.");
             Saldo += valor;
-            Console.WriteLine($"Depósito de R$ {valor:F2} realizado com sucesso na conta de {Titular}.");
+            Console.WriteLine($"Depósito de R$ {valor:F2} realizado com sucesso por {Titular}. Saldo atual: R$ {Saldo:F2}");
         }
 
         public virtual void Sacar(decimal valor)
         {
             if (valor <= 0)
             {
-                Console.WriteLine("O valor do saque deve ser positivo.");
-                return;
+                throw new ArgumentException("O valor do saque deve ser positivo.");
             }
 
-            if (Saldo >= valor)
+            if (valor > Saldo)
             {
-                Saldo -= valor;
-                Console.WriteLine($"Saque de R$ {valor:F2} realizado com sucesso por {Titular}.");
+                throw new InvalidOperationException("Saldo insuficiente para realizar o saque.");
             }
-            else
-            {
-                Console.WriteLine($"Saldo insuficiente para o saque de R$ {valor:F2} (Saldo atual: R$ {Saldo:F2}).");
-            }
+
+            Saldo -= valor;
+            Console.WriteLine($"Saque de R$ {valor:F2} realizado com sucesso por {Titular}. Saldo atual: R$ {Saldo:F2}");
         }
 
         public virtual void ExibirExtrato()
@@ -61,4 +55,9 @@ public abstract class Conta
         }
 
         public abstract void FimDoMes();
+
+    internal static object GetTotalContas()
+    {
+        throw new NotImplementedException();
     }
+}
